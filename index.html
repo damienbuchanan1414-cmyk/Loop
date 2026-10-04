@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101114">
+  <meta name="description" content="Loop is a short-video playground for little moments, creative loops, and new ideas.">
+  <meta property="og:title" content="Loop — short videos, your way">
+  <meta property="og:description" content="A little space for loops, ideas, and your people.">
+  <meta property="og:type" content="website">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon-192.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-512.svg">
+  <title>Loop — short videos, your way</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell" id="app">
+    <header class="app-header">
+      <button class="brand" data-view="feed" aria-label="Loop home"><span class="brand-mark">∞</span><span>loop</span></button>
+      <div class="header-actions">
+        <button class="download-cta" data-action="install-app" aria-label="Download or install Loop">Download</button>
+        <button class="header-icon" data-view="discover" aria-label="Search">⌕</button>
+        <button class="header-icon notification-button" data-view="notifications" aria-label="Notifications">♧<i></i></button>
+      </div>
+    </header>
+    <a class="skip-link" href="#viewRoot">Skip to content</a>
+    <div class="view-root" id="viewRoot" tabindex="-1"></div>
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="nav-button selected" data-view="feed"><span class="nav-icon">⌂</span><span>Home</span></button>
+      <button class="nav-button" data-view="discover"><span class="nav-icon">⌕</span><span>Explore</span></button>
+      <button class="nav-button create-nav" data-action="open-create" aria-label="Create a video"><span class="create">＋</span></button>
+      <button class="nav-button" data-view="inbox"><span class="nav-icon">✉</span><span>Inbox</span></button>
+      <button class="nav-button" data-view="profile"><span class="nav-icon">◉</span><span>Me</span></button>
+    </nav>
+    <input id="videoPicker" type="file" accept="video/*" capture="environment" hidden>
+    <input id="avatarPicker" type="file" accept="image/*" hidden>
+    <div class="overlay" id="overlay" aria-live="polite"></div>
+    <div class="toast" id="toast" role="status"></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+{
+  "id": "./",
+  "name": "Loop — short videos, your way",
+  "short_name": "Loop",
+  "description": "A little space for loops, ideas, and your people.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#101114",
+  "theme_color": "#101114",
+  "categories": ["social", "entertainment"],
+  "icons": [
+    { "src": "icon-192.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any maskable" },
+    { "src": "icon-512.svg", "sizes": "512x512", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
+
